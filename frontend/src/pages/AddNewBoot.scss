@@ -1,0 +1,49 @@
+.form {
+    padding: 5%;
+    margin: 10% auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    background-color: white;
+    & > div {
+      width: 100%;
+      aspect-ratio: 0;
+    }
+    select,
+    input {
+      width: 100%;
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--blue);
+      border-radius: 0.5rem;
+      color: black;
+      &:invalid {
+        color: rgba(0, 0, 0, 0.3);
+      }
+    }
+    input::placeholder {
+      color: rgba(0, 0, 0, 0.3);
+    }
+    input:focus,
+    select:focus {
+      outline: none;
+      border: 2px solid var(--blue);
+    }
+    input[type="submit"] {
+      background-color: var(--blue);
+      border: none;
+      border-radius: 2rem;
+      font-size: 1.25rem;
+      color: white;
+      cursor: pointer;
+      &:hover{
+        color: darkblue;
+      }
+    }
+  
+    input[type="file"] {
+      border: none;
+    }
+
+  }

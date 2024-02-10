@@ -1,0 +1,18 @@
+nav {
+  background-color: tomato;
+  padding:0.5rem ;
+  display: flex;
+  gap: 2rem;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  img {
+    height: 100%;
+    cursor: pointer;
+
+  }
+  .plus{
+    font-size: 2rem;
+    color: black;
+  }
+}
