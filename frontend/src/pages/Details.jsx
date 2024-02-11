@@ -54,6 +54,7 @@ const Details = () => {
       <h4>Reservierungen</h4>
       <div className="res_container">
         {boot.reservierungen?.length > 0 ? (
+          <Link to='/new-reservation'>
           <ul>
             {boot.reservierungen.map(reservierung => (
               <li key={reservierung._id}>
@@ -61,6 +62,7 @@ const Details = () => {
               </li>
             ))}
           </ul>
+          </Link>
         ) : (
           <Link to="/new-reservation">
             <img src={kalender} alt="kalender" className="img_detail"/>

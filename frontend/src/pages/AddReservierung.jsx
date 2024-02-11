@@ -120,7 +120,6 @@ const AddReservierung = () => {
         dayClassName={(date) => isDateAvailable(date) && date >= startDate ? 'available' : 'unavailable'}
 />
       </div>
-
       <div className="form-group">
         <label htmlFor="boot">Boot auswählen:</label>
         <select id="boot" value={selectedBoot} onChange={handleSelectChange}>
